@@ -43,6 +43,6 @@
     - create images folder
 - configure django 
     - Goto projrct settings.py, 
-    -  Add STATICFILES_DIRS = [ OS.path.join (BASE_DIR, 'static/)]
-    -  In the HTML files , add a tag at the top of file ** {% load static %}
-    -  from here on any reference to static files shall be prefixed with ** href = "{% static '/cass/base.css '%}"
+    -  Add STATICFILES_DIRS = [ OS.path.join (BASE_DIR, 'static')]
+    -  In the HTML files , add a tag at the top of file ** {% load static %} **
+    -  from here on any reference to static files shall be prefixed with ** href = "{% static '/cass/base.css '%}" **
