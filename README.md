@@ -1,7 +1,5 @@
 # setting up:
 
----
-
 ## Create virtual environment
 
 - pipenv install --python python3
@@ -20,19 +18,13 @@
 
 # Create a new project:
 
----
-
 - django-admin startproject myblog
 
 # To run the project:
 
----
-
 - pyhton manage.py runserver
 
 # To create an app
-
----
 
 - python manage.py startapp blog
 
