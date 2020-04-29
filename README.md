@@ -33,3 +33,16 @@
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py createsuoeruser
+
+# Adding Static content
+- create "static" folder in root directory
+    - create css folder
+        - create base.css file
+        - create about.css file etc ....
+    - create js folder
+    - create images folder
+- configure django 
+    - Goto projrct settings.py, 
+    -  Add STATICFILES_DIRS = [ OS.path.join (BASE_DIR, 'static/)]
+    -  In the HTML files , add a tag at the top of file ** {% load static %}
+    -  from here on any reference to static files shall be prefixed with ** href = "{% static '/cass/base.css '%}"
